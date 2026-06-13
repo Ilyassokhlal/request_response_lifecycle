@@ -22,7 +22,7 @@ def anatomy_func(response):
     print("\n6.Response Body:")
     print(json.dumps(response.json(), indent=3))
 
-    print(f"\n7.Total time elapsed: {response.elapsed.total_seconds()*1000:.3f} milliseconds")
+    print(f"\n7.Total time elapsed: {response.elapsed.total_seconds()*1000:.0f} milliseconds")
 
 # GET
 response = requests.get("https://jsonplaceholder.typicode.com/users/1")
